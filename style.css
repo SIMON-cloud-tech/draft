@@ -1,0 +1,683 @@
+ /* Reset some default styling */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  /*background-image*/
+  .background-container{
+    width: 100%;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+  }
+  .image{
+    width: 100%;
+    height: 500px;
+  }
+  .image img{
+    width: 100%;
+    height: 100%;
+  }
+  #toggle-btn{
+    position: absolute;
+    bottom: 10px 20px;
+    font-size: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: -27rem;
+    color: black;
+  }
+  #toggle-btn:hover{
+    color: green;
+    transition: 0.5s;
+  }
+  /*background image ends*/
+  /*header contents starts*/
+  .header{
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    justify-content: center;
+    margin-right: 10px;
+    gap: 20px;
+  }
+  .head img{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+  }
+  .head h4{
+    display: inline-flex;
+  }
+  .social ul{
+    display: flex;
+  }
+  .social ul li{
+    list-style: none;
+    margin-right: 4px;
+  }
+  .social ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .social ul li img:hover{
+    transform: scale(1,1.01);
+    transition: 0.5s;
+    color: white;
+  }
+  .social img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+  }
+   /*header contents ends*/
+  /* Nav links styling */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbar ul li {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  .navbar ul li a:hover {
+    color: #1abc9c;
+  }
+  /* Task bar/hamburg
+  /*services starts*/
+  .btns{
+    text-align: center;
+    display: inline;
+  }
+  .addBtn{
+    width: 70px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: red;
+    color: black;
+    padding-inline: 3px;
+    margin: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .addBtn:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+  .addBtn1{
+    width: 70px;
+    height: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: red;
+    color: black;
+    padding-inline: 3px;
+    margin: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .addBtn1:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+  .letter-head{
+    margin-top: 1rem;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 4rem;
+    align-items: center;
+  }
+  .letter{
+    text-align: center;
+  }
+  .letter h2{
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  .letter p{
+    color: #100110;
+    font-size: 17px;
+  }
+  #visit{
+    width: 30%;
+    font-size: 20px;
+    font-weight: 680;
+    flex: 1;
+    padding: 4px;
+    margin: 1rem;
+    background-color: red;
+    border: none;
+    margin-right: 0.3rem;
+    border-radius: 5px;
+    color: white;
+  }
+  #visit:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: 0.4s;
+  }
+  #appointment{
+    width: 30%;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 2px;
+    margin: 1rem;
+    margin-left: 0;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+  }
+  #appointment:hover{
+    color: red;
+    transition: 0.4s;
+    background-color: black;
+    border: 1px solid red;
+  }
+  .services{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .services h2{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .services-container{
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    gap: 10px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+  }
+  .servicee{
+    min-width: 33.33%;
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-color: whitesmoke;
+    margin: 0.4rem;
+    flex-direction: column;
+    box-shadow: 1PX 1PX 1PX black;
+    border-radius: 12PX;
+  }
+  .servicee .imagi{
+    width: 100%;
+    height: 300px;
+  }
+  .imagi img{
+    width: 100%;
+    border-radius: 12PX;
+    height: 100%;
+    flex: 1;
+  }
+  .service-content{
+    display: flex;
+    flex-direction: column;
+    color: #100110;
+    text-align: center;
+    padding: 10px;
+    justify-content: start;
+  }
+  .service-content h2{
+    color: red;
+    margin-bottom: 5PX;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  /*services ends*/
+  /*Blogs section starts*/
+  .blog-section{
+    text-align: center;
+    justify-content: center;
+  }
+  .blog-section h2{
+    font-size: 20px;
+    color: red;
+  }
+  .blog-section p{
+    margin-bottom: 2rem;
+  }
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    gap: 10px;
+  }
+  .blog{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid red;
+    border-radius: 12px;
+  }
+  .blog h2{
+    font-size: 20px;
+    margin-top: 1rem;
+    color: red;
+  }
+  .blog p{
+    color: #100110;
+    padding: 4px;
+  }
+  /*Blog section ends*/
+  /*TESTIMONIALS STARTS HERE*/
+  .uploadBtn{
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 0.3rem;
+    background-color: red;
+    color: white;
+  }
+  .uploadBtn:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: 0.4s;
+  }
+  .testimonials{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .testimonials h2{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .testimonials p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .testimonials-container{
+    position: relative;
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .testimonial{
+    display: none;
+    align-items: center;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 12px;
+    margin-right: 10px;
+    flex: 1;
+    margin-left: 10px;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .testimonial-image{
+    width: 200px;
+    height: 200px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .testimonial-image img{
+    border-radius: 50%;
+    width: 60%;
+    margin-top: 10px;
+    height: 60%;
+  }
+  .card-content{
+    margin-top: -4rem;
+    margin-left: 1rem;
+  }
+  .card-content h2{
+    text-align: start;
+    justify-content: start;
+    margin-left: 1rem;
+  }
+  .card-content p{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: -3rem;
+  }
+  .buttons{
+    text-align: center;
+    margin-top: 10px;
+  }
+    #prevBtn{
+      margin-left: -3rem;
+      width: 70px;
+      background-color: #222;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+  #prevBtn:hover{
+    background-color: #100110;
+    transition: 0.5s;
+  }
+  #nextBtn{
+    width: 70px;
+    background-color: #222;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #nextBtn:hover{
+    background-color: #100110;
+    transition: 0.5s;
+  }
+  /*TESTIMONIALS ENDS HERE*/
+  /*contacts starts here */
+  .contacts{
+    background-color: red;
+    color: black;
+  }
+  .contacts-head{
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .contacts-head p{
+    padding: 3px;
+  }
+  .contacts-container{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 10px;
+  }
+  .contact{
+    box-shadow: 1px 1px 1px black;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  .contact h2, p{
+    text-align: center;
+  }
+  .contact ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .contact ul li{
+    list-style: none;
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    margin-right: 4px;
+  }
+  .contact ul li img{
+    width: 20px;
+    margin-right: 1rem;
+    height: 20px;
+    border-radius: 30px;
+  }
+  .contact ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .contact-form{
+    display: flex;
+    width: 96%;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    background-image: url(image7.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+  }
+  #contactForm{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex: 1;
+  }
+  #contactForm input{
+    width: 98%;
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin: 0.4rem;
+    color: white;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px black;
+    border: 1px solid red;
+    outline: none;
+    border-radius: 12px;
+    padding: 10px;
+  }
+  #contactForm textarea{
+    width: 98%;
+    line-height: 1.4rem;
+    color: white;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 12px;
+    background-color: transparent;
+    padding: 10px;
+    height: 40%;
+    margin-right: 1rem;
+    margin: 0.4rem;
+  }
+  .btn3{
+    width: 98%;
+    background-color: black;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin: 0.3rem 0.2rem 0.2rem 0.3rem;
+    color: white;
+    font-size: 20px;
+  }
+  .btn3:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin-top: 0.1rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+  .links{
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .links ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 10px;
+  }
+  .links ul li{
+    list-style: none;
+  }
+  .links ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .links ul li a:hover{
+    color: red;
+    transition: 0.5s;
+  }
+  .logoimage{
+    width: 80px;
+    height: 80px;
+  }
+  .logoimage img{
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-right: 6rem;
+    border-radius: 50%;
+    margin-top: 2REM;
+  }
+  .log1{
+    margin-left: 20%;
+    margin-top: 2rem;
+    display: flex;
+  }
+  .info{
+    margin-left: 5rem;
+  }
+  .info ul li{
+    list-style: none;
+    padding: 8px;
+    margin-right: 5px;
+    display: flex;
+  }
+  .info img{
+    width: 20px;
+    margin-right: 1rem;
+    height: 20px;
+    border-radius: 20px;
+  }
+  .ends{
+    color: red;
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+  }
+  /*contacts ends here*/
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    /*header*/
+    .image{
+        width: 100%;
+        height: 500px;
+        flex: 1;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .head{
+        margin-left: 5px;
+    }
+    .head img{
+        flex: 1;
+    }
+    .social img{
+        flex: 1;
+    }
+    .social ul{
+        position: relative;
+        margin-left: 86%;
+    }
+    /* Show the hamburger icon on smaller screens */
+    .navbar.menuIcon {
+      display: block;
+      color: white;
+      cursor: pointer;
+    }
+    /* Hide the nav links at start */
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        color: black;
+        background-color: darkred;
+        display: none;
+        left: 0;
+    }
+    .navbar ul.active {
+      display: flex;
+    }
+    .navbar ul li {
+      margin: 0;
+      text-align: center;
+    }
+    .blogs{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+    }
+    .blog{
+      flex: 1;
+      width: 99%;
+      height: 100%;
+    }
+    .card-content{
+      margin: 0;
+    }
+    .card-content p{
+      margin-left: 2px;
+      margin-bottom: 5px;
+    }
+    .testimonial-image img{
+      margin-top: 20%;
+    }
+    .services-container{
+      align-items: center;
+      justify-content: center;
+    }
+    .footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .contacts-container{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: start;
+    }
+    .services-container{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .servicee{
+      flex: 1;
+      width: 96%;
+    }
+  }

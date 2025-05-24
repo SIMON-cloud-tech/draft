@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda || Interior || Designs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+    <section class="heading">
+    <div class="header">
+        <div class="head">
+            <h4><img src="email.jpg">amandainteriors957@gmail.com</h4>
+            <h4><img src="phone.jpg">+254 719610791</h4>
+        </div>
+        <hr></hr>
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="facebook.svg"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+                <li><a href="#"><img src="linkedin.png"></a></li>
+                <li><a href="#"><img src="you.svg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr></hr>
+    <nav class="navbar">
+        <div class="logo">Amanda</div>
+        <!-- Task bar/hamburger icon -->
+        <div class="menuIcon" id="menuIcon">&#9776;</div>
+        <!-- Navigation links -->
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="store.html" target="_blank">Store & Services</a></li>
+          <li><a href="projects.html" target="_blank">Projects</a></li>
+          <li><a href="contact.html" target="_blank">Contacts</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="letter-head">
+        <div class="letter">
+            <h2>Amanda Interior Designs and Decorators</h2>
+            <p>We add taste to your interior spaces, be it office, kitchen, restaurant etc, we got you covered</p>
+            <h4>For cosy and affordable interior designs</h4>
+            <div class="btns">
+                <button id="visit">Book Appointment</button>
+                <button id="appointment">Connect to us</button>
+            </div>
+        </div>
+    </section>
+    <section class="background-container">
+        <div class="image">
+            <img src="bg.jpg">
+        </div>
+        <button id="toggle-btn">.  .  .</button>
+    </section>
+    <!--Shop starts  here-->
+    <section class="shop">
+    <header>
+        <h1><a href="index.html">Our store</a></h1>
+        <input type="text" id="searchBar" placeholder="Search here" oninput="filterProducts()">
+    </header>
+<div class="main">
+    <div class="products">
+        <div class="product" data-name="beautysoap">
+            <img src="image1.jpg" alt="Beauty soap">
+            <div class="product-content">
+            <h3>Exterior looks</h3>
+            <p>Price: Ksh.200</p>
+            <button onclick="addToCart('Beauty soap', 200)" class="btn">Add To Cart</button>
+        </div>
+        </div>
+        <div class="product" data-name="Exterior">
+            <img src="image1.jpg" alt="Exterior">
+            <div class="product-content">
+            <h3>Exterior looks</h3>
+            <p>Price: Ksh.200000</p>
+            <button onclick="addToCart('Exterior', 200000)" class="btn">Add To Cart</button>
+        </div>
+        </div>
+        <div class="product" data-name="beautysoap">
+            <img src="image1.jpg" alt="Beauty soap">
+            <div class="product-content">
+            <h3>Exterior looks</h3>
+            <p>Price: Ksh.200000</p>
+            <button onclick="addToCart('Exteriro looks', 200000)" class="btn">Add To Cart</button>
+        </div>
+        </div>
+        <div class="product" data-name="beautysoap">
+            <img src="image1.jpg" alt="Beauty soap">
+            <div class="product-content">
+            <h3>Exterior looks</h3>
+            <p>Price: Ksh.200000</p>
+            <button onclick="addToCart('Exterior looks', 200000)" class="btn">Add To Cart</button>
+        </div>
+        </div>
+        <div class="product" data-name="Collections">
+            <img src="image7.jpg" alt="soaps">
+            <div class="product-content">
+            <h3>Collections</h3>
+            <p>Price: Ksh.355,000</p>
+            <button onclick="addToCart('Collections', 355000)" class="btn">Add To Cart</button>
+    </div>
+    </div>
+    <div class="product" data-name="Collections">
+        <img src="image7.jpg" alt="soaps">
+        <div class="product-content">
+        <h3>Collections</h3>
+        <p>Price: Ksh.355000</p>
+        <button onclick="addToCart('Collections', 355000)" class="btn">Add To Cart</button>
+</div>
+</div>
+    </div>
+    <div class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart"></div>
+    <h3 id="total"></h3>
+    <button onclick="checkout()" class="btn1">Order</button>
+    </div>
+</div>
+    </section>
+    <!--Shop ends here-->
+    <!--Services begins here-->
+    <!--Services ends here-->
+    <!--projects section begins here-->
+    <section class="projects">
+        <h2>Discover our recent projects</h2>
+        <p>For credibility purposes we upload our projects to this site for our clients to have a look at</p>
+    <div class="carousel">
+        <div class="video-card"><video src="COSY1.mp4" controls></video>
+            <h2>Interior looks</h2>
+        </div>
+        <div class="video-card"><video src="COSY2SONG.mp4" controls></video>
+            <h2>Comfy looks</h2>
+        </div>
+        <div class="video-card"><video src="COSY3.mp4" controls></video>
+            <h2>Interior Looks</h2>
+        </div>
+        <div class="video-card"><video src="DEMO.mp4" controls></video>
+            <h2>Interior Architecture</h2>
+        </div>
+        <div class="video-card"><video src="SPACY.mp4" controls></video>
+            <h2>Sitting-room interior styling</h2>
+        </div>
+        <div class="video-card"><video src="KITCHEN.mp4" controls></video>
+            <h2>Kitchen interior styling</h2>
+        </div>
+</div>
+</div>
+    </section>
+    <!--Projects section ends here-->
+    <!--Blogs begins here-->
+    <section class="blog-section">
+        <h2>Blogs</h2>
+        <p>Learn more about our work by going through the following blogs</p>
+        <div class="btns">
+        <button id="addFiles()" class="addBtn">+</button>
+        <button id="removeFiles()" class="addBtn1">-</button>
+        </div>
+        <div class="blogs">
+            <div class="blog">
+                <h2>BLOG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vitae tempora optio architecto similique laboriosam incidunt excepturi facilis voluptates quos. Perspiciatis voluptatibus suscipit tenetur qui rem accusantium ex veritatis impedit.</p>
+            </div>
+            <div class="blog">
+                <h2>BLOG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vitae tempora optio architecto similique laboriosam incidunt excepturi facilis voluptates quos. Perspiciatis voluptatibus suscipit tenetur qui rem accusantium ex veritatis impedit.</p>
+            </div>
+            <div class="blog">
+                <h2>BLOG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vitae tempora optio architecto similique laboriosam incidunt excepturi facilis voluptates quos. Perspiciatis voluptatibus suscipit tenetur qui rem accusantium ex veritatis impedit.</p>
+            </div>
+            <div class="blog">
+                <h2>BLOG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vitae tempora optio architecto similique laboriosam incidunt excepturi facilis voluptates quos. Perspiciatis voluptatibus suscipit tenetur qui rem accusantium ex veritatis impedit.</p>
+            </div>
+            <div class="blog">
+                <h2>BLOG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vitae tempora optio architecto similique laboriosam incidunt excepturi facilis voluptates quos. Perspiciatis voluptatibus suscipit tenetur qui rem accusantium ex veritatis impedit.</p>
+            </div>
+            <div class="blog">
+                <h2>BLOG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate vitae tempora optio architecto similique laboriosam incidunt excepturi facilis voluptates quos. Perspiciatis voluptatibus suscipit tenetur qui rem accusantium ex veritatis impedit.</p>
+            </div>
+        </div>
+    </section>
+    <!--Blogs ends here-->
+    <!--Testimonials begins here-->
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <p>Discover what our clients have to say about our products</p>
+        <button onclick="uploadTestimonial()" class="uploadBtn">Add Testimonial</button>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="testimonial-image">
+                <img src="one.jpg">
+                </div>
+                <div class="card-content">
+                <h2>John Doe</h2>
+                <p>"They've helped me curate a n awesome desin for my office which not only inproved my aesthetics but also helped me in cutting down the costs."</p>
+            </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image">
+                <img src="one.jpg">
+                </div>
+                <div class="card-content">
+                <h2>Simon Doe</h2>
+                <p>"They've helped me curate a n awesome desin for my office which not only inproved my aesthetics but also helped me in cutting down the costs."</p>
+            </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image">
+                <img src="one.jpg">
+                </div>
+                <div class="card-content">
+                <h2>Simon Doe</h2>
+                <p>"They've helped me curate a n awesome desin for my office which not only inproved my aesthetics but also helped me in cutting down the costs."</p>
+            </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image">
+                <img src="goodone.jpg">
+                </div>
+                <div class="card-content">
+                <h2>Perpetual Doe</h2>
+                <p>"They've helped me curate a n awesome desin for my office which not only inproved my aesthetics but also helped me in cutting down the costs."</p>
+            </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image">
+                <img src="namesy1.jpg">
+                </div>
+                <div class="card-content">
+                <h2>Antonio</h2>
+                <p>"They've helped me curate a n awesome desin for my office which not only inproved my aesthetics but also helped me in cutting down the costs."</p>
+            </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image">
+                <img src="hers.jpg">
+                </div>
+                <div class="card-content">
+                <h2>MaryLeens Doe</h2>
+                <p>"They've helped me curate an awesome design for my office which not only improved my aesthetics but also helped me in cutting down the costs."</p>
+            </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prevBtn"><</button>
+            <button id="nextBtn">></button>
+        </div>
+    </section>
+       <!--Testimonials ends here-->
+       <!--contacts starts here-->
+    <section class="contacts">
+        <div class="contacts-head">
+            <h2>Contacts</h2>
+            <p>Reach out to us through the following contacts, or email us your concerns below</p>
+        </div>
+        <div class="contacts-container">
+            <div class="contact">
+                <h2>Our contacts</h2>
+                <p>For cosy and affordable living concepts</p>
+                <ul>
+                    <li><img src="location.png">P. O BOX 1116-00200 City Square, Nairobi, KE.</li>
+                    <li><img src="email.jpg">amandainteriors957@gmail.com</li>
+                    <li><img src="phone.jpg">0719610791/ 071905816</li>
+                    <li><img src="location.png">www.amanda.com</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <p>Kindly message us now</p>
+                <form id="contactForm">
+                    <input type="text" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="password">
+                    <textarea id="message">Inquire</textarea>
+                </form>
+                <p id="erromessage"></p>
+                <button onclick="submit()" class="btn3">Submit</button>
+            </div>
+        </div>
+    </section>
+    <!--Contacts section ends here-->
+    <!--footer information starts here-->
+    <section class="footer">
+        <div class="links">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><A href="#">Store</A></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </div>
+        <div class="log1">
+            <div class="logoimage">
+                <img src="image1.jpg">
+            </div>
+            <div class="info">
+                <h2>AMANDA INTERIOR DESIGNERS AND DECORATORS</h2>
+                <ul>
+                    <li><img src="place.jpg"> P.O BOX 116-00200 City Square, Nairobi, KE</li>
+                    <li><img src="email.jpg"> amandainteriors957@gmail.com</li>
+                    <li><img src="phone.jpg"> 0719610791/0719058167</li>
+                    <li><b>For cosy and affordable living concepts</b></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="ends">
+        <h4>Amanda Interior Designers & Decorators || @2025 Copyrights || All Rights reserved</h4>
+    </div>
+    <!--Footer information ends here-->
+      <script src="script.js"></script>
+      <script src="projects.js"></script>
+      <script src="navigation.js"></script>
+      <script src="main.js"></script> 
+</body>
+</html>

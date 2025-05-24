@@ -1,0 +1,58 @@
+.projects{
+    display: flex;
+    flex: 1;
+    margin-top: 3rem;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.projects h2{
+    text-align: center;
+    margin-top: 2rem;
+    color: red;
+}
+.carousel{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.video-card{
+    background-color: red;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 20px;
+    height: 300px;
+}
+.video-card video{
+    width: 100%;
+    height: 100%;
+}
+.video-card h2{
+    text-align: start;
+    justify-content: center;
+    color: black;
+    margin: 1rem;
+}
+
+@media (max-width: 600px) {
+    .carousel{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: 5px;
+        grid-column: 5px;
+        margin-bottom: 3rem;
+    }
+    .video-card{
+        width: 99%;
+        height: 100%;
+        flex: 1;
+        margin: 1rem;
+    }
+}

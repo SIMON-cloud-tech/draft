@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    margin-top: 3rem;
+    justify-content: center;
+}
+header h1 a{
+    color: red;
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: none;
+}
+header input{
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 2rem;
+    margin: 0.4rem;
+    font-size: 30px;
+    font-weight: 500;
+    outline: none;
+    text-transform: capitalize;
+    padding-top: 0.6rem;  
+    padding: 0.3rem;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 70%;
+    gap: 10px;
+    column-gap: 10px;
+
+}
+.product{
+    width: 325px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 1px black;
+    overflow: hidden;
+}
+.product img{
+    width: 100%;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 60%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.product-content{
+    background-color: white;
+    width: 100%;
+}
+.product-content p{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #111;
+    font-size: 17px;
+}
+.product-content h3{
+    color: black;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.product-content button{
+    background-color: red;
+    color: black;
+    text-align: center;
+    line-height: 1.5rem;
+    width: 99%;
+    padding: 0.2rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-content button:hover{
+    border: 2px solid black;
+    color: black;
+    transition: 0.5s;
+    background-color: transparent;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.cart{
+    background-color: black;
+    border-radius: 12px;
+    border: 2px solid red;
+    margin-left: 0rem;
+    color: white;
+    height: auto;
+    width: 20%;
+}
+.cart h2{
+    font-size: large;
+    font-weight: 900;
+    color: red;
+    border-bottom: 1px solid black;
+    text-shadow: #111;
+    text-align: center;
+    margin-top: 1rem;
+}
+.cart #cart{
+    text-align: start;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 0.3rem;
+}
+.cart #total{
+    text-align: start;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    bottom: 1px solid black;
+    text-decoration: underline;
+}
+.btn1{
+    width: 99%;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+    margin: 0.4rem;
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+.btn1:hover{
+    background-color: darkred;
+}
+/*media queries*/
+@media (max-width: 600px) {
+    header{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        justify-content: start;
+    }
+    header input{
+        width: 98%;
+        margin-bottom: 0.54rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: gainsboro;
+    }
+    .cart{
+        width: 100%;
+        margin-top: 3px;
+    }
+    .products{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 768px) and (min-width: 602px) {
+    header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    header input{
+        width: 80%;
+        margin-bottom: 0.6rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+    }
+    .cart{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+    header input{
+        width: 70%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+    }
+    .products{
+        display: grid;
+        width: 100%;
+        grid-gap: 10px;
+        background-color: gainsboro;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product{
+        width: 250px;
+
+    }
+    .cart{
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+}
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: red; /* Light background for visibility */
+    width: 100%;
+    position: relative;
+    z-index: 2000; /* Ensures header stays above other content */
+}
+.head h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2000; /* Keeps menu above background */
+    background-color: black; /* Transparency */
+    padding: 10px 20px;
+}
+/*social and head*/
+/* Navigation Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+/* Mobile-specific styles */
+.menuIcon {
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+    display: none; /* Hidden on large screens */
+}
+/* Mobile Menu Display */
+@media screen and (max-width: 768px) {
+    .menuIcon {
+        display: block;
+        color: white;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: black; /* Keeps menu above background */
+        padding: 15px;
+    }
+    .navbar ul li:hover{
+        width: 100%;
+        color: white;
+        background-color: red;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    /* Ensure .header doesn't shrink */
+    .header {
+        padding: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
